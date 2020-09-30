@@ -32,7 +32,7 @@ function getCmdOpt($aArg, $aSpec, &$aResult, $bExitOnError = false, $bExitOnUnkn
 
                         switch ($aLine[6]) {
                             case 'realpath':
-                                $xVal[] = realpath($aArg[$i]);
+                               $xVal[] = $aArg[$i];
                                 break;
                             case 'realdir':
                                 $sPath = realpath(dirname($aArg[$i]));
